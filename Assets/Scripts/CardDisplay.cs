@@ -10,50 +10,25 @@ public class CardDisplay : MonoBehaviour
         //Check how many cards total, if only have 3 or 2 or 1 just show those cards
         //The cards are intertwine with the Adventure Creator Inventory system, but to display them w generated text+img they have to be menu elements so its a weird combo.
         int cardCount = AC.KickStarter.runtimeInventory.GetNumberOfItemsCarried();
-        string card1name;
-        string card2name;
-        string card3name;
-        string card4name;
 
-        switch(cardCount) {
-            case 0:
-                Debug.Log("Err. No cards.");
-                break;
-            case 1:
-                TurnOffCard("2");
-                TurnOffCard("3");
-                TurnOffCard("4");
-                card1name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[0].invItem.label;
-                TurnOnCard(card1name, 1);
-                break;
-            case 2:
-                TurnOffCard("3");
-                TurnOffCard("4");
-                card1name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[0].invItem.label;
-                TurnOnCard(card1name, 1);
-                card2name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[1].invItem.label;
-                TurnOnCard(card2name, 2);
-                break;
-            case 3:
-                TurnOffCard("4");
-                card1name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[0].invItem.label;
-                TurnOnCard(card1name, 1);
-                card2name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[1].invItem.label;
-                TurnOnCard(card2name, 2);
-                card3name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[2].invItem.label;
-                TurnOnCard(card3name, 3);
-                break;
-            default:
-                card1name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[0].invItem.label;
-                TurnOnCard(card1name, 1);
-                card2name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[1].invItem.label;
-                TurnOnCard(card2name, 2);
-                card3name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[2].invItem.label;
-                TurnOnCard(card3name, 3);
-                card4name =  AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[3].invItem.label;
-                TurnOnCard(card4name, 4);
-                break;
-        }
+		List<string> cardName = new List<string>() { "", "", "", "", ""};
+
+		if (cardCount == 0)
+			Debug.Log("Err. No cards.");
+		else
+		{
+			// Turn off cards over cardCount.
+			for (int i = cardCount + 1; i < 5; i++)
+				TurnOffCard(i.ToString());
+
+			// Turn on cards up to cardCount
+			for (int i = 0; i <= cardCount; i++)
+			{
+				cardName[i] = AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[i].invItem.label;
+				TurnOnCard(cardName[i], i + 1);
+			}
+
+		}
         //Check order of inventory, first card show the matching img/title/desc
         //second show second
         //etc
