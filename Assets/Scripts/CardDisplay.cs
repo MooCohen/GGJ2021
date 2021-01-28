@@ -11,24 +11,24 @@ public class CardDisplay : MonoBehaviour
         //The cards are intertwine with the Adventure Creator Inventory system, but to display them w generated text+img they have to be menu elements so its a weird combo.
         int cardCount = AC.KickStarter.runtimeInventory.GetNumberOfItemsCarried();
 
-		List<string> cardName = new List<string>() { "", "", "", "", ""};
+        List<string> cardName = new List<string>() { "", "", "", "", ""};
 
-		if (cardCount == 0)
-			Debug.Log("Err. No cards.");
-		else
-		{
-			// Turn off cards over cardCount.
-			for (int i = cardCount + 1; i < 5; i++)
-				TurnOffCard(i.ToString());
+        if (cardCount == 0)
+            Debug.Log("Err. No cards.");
+        else
+        {
+            // Turn off cards over cardCount.
+            for (int i = cardCount + 1; i < 5; i++)
+                TurnOffCard(i.ToString());
 
-			// Turn on cards up to cardCount
-			for (int i = 0; i <= cardCount; i++)
-			{
-				cardName[i] = AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[i].invItem.label;
-				TurnOnCard(cardName[i], i + 1);
-			}
+            // Turn on cards up to cardCount
+            for (int i = 0; i <= cardCount; i++)
+            {
+                cardName[i] = AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[i].invItem.label;
+                TurnOnCard(cardName[i], i + 1);
+            }
 
-		}
+        }
         //Check order of inventory, first card show the matching img/title/desc
         //second show second
         //etc
