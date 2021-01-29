@@ -29,121 +29,116 @@ public class CardDisplay : MonoBehaviour
             }
 
         }
-        //Check order of inventory, first card show the matching img/title/desc
-        //second show second
-        //etc
-        
     }
 
-    //TODO this could be refactored
     void TurnOnCard(string name, int cardNumber) {
-            if (name.Trim().Equals(TITLE.COWBOY_FEET)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.COWBOY_FEET;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.COWBOY_FEET;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_FEET);
-            }
+        if (name.Trim().Equals(TITLE.COWBOY_FEET)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.COWBOY_FEET;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.COWBOY_FEET;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_FEET);
+        }
 
-            if (name.Trim().Equals(TITLE.COWBOY_LEGS)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.COWBOY_LEGS;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.COWBOY_LEGS;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_LEGS);
-            }
-            
-            if (name.Trim().Equals(TITLE.COWBOY_TORSO)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.COWBOY_TORSO;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.COWBOY_TORSO;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_TORSO);
-            }
+        if (name.Trim().Equals(TITLE.COWBOY_LEGS)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.COWBOY_LEGS;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.COWBOY_LEGS;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_LEGS);
+        }
+        
+        if (name.Trim().Equals(TITLE.COWBOY_TORSO)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.COWBOY_TORSO;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.COWBOY_TORSO;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_TORSO);
+        }
 
-            if (name.Trim().Equals(TITLE.COWBOY_HAT)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.COWBOY_HAT;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.COWBOY_HAT;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_HAT);
-            }
+        if (name.Trim().Equals(TITLE.COWBOY_HAT)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.COWBOY_HAT;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.COWBOY_HAT;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_HAT);
+        }
 
-            if (name.Trim().Equals(TITLE.GOTH_FEET)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.GOTH_FEET;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.GOTH_FEET;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_FEET);
-            }
+        if (name.Trim().Equals(TITLE.GOTH_FEET)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.GOTH_FEET;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.GOTH_FEET;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_FEET);
+        }
 
-            if (name.Trim().Equals(TITLE.GOTH_LEGS)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.GOTH_LEGS;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.GOTH_LEGS;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_LEGS);
-            }
+        if (name.Trim().Equals(TITLE.GOTH_LEGS)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.GOTH_LEGS;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.GOTH_LEGS;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_LEGS);
+        }
 
-            if (name.Trim().Equals(TITLE.GOTH_TORSO)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.GOTH_TORSO;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.GOTH_TORSO;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_TORSO);
-            }
+        if (name.Trim().Equals(TITLE.GOTH_TORSO)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.GOTH_TORSO;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.GOTH_TORSO;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_TORSO);
+        }
 
-            if (name.Trim().Equals(TITLE.GOTH_HAT)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.GOTH_HAT;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.GOTH_HAT;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_HAT);
-            }
+        if (name.Trim().Equals(TITLE.GOTH_HAT)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.GOTH_HAT;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.GOTH_HAT;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_HAT);
+        }
 
-            if (name.Trim().Equals(TITLE.CUTE_FEET)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.CUTE_FEET;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.CUTE_FEET;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_FEET);
-            }
+        if (name.Trim().Equals(TITLE.CUTE_FEET)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.CUTE_FEET;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.CUTE_FEET;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_FEET);
+        }
 
-            if (name.Trim().Equals(TITLE.CUTE_LEGS)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.CUTE_LEGS;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.CUTE_LEGS;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_LEGS);
-            }
+        if (name.Trim().Equals(TITLE.CUTE_LEGS)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.CUTE_LEGS;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.CUTE_LEGS;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_LEGS);
+        }
 
-            if (name.Trim().Equals(TITLE.CUTE_TORSO)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.CUTE_TORSO;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.CUTE_TORSO;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_TORSO);
-            }
+        if (name.Trim().Equals(TITLE.CUTE_TORSO)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.CUTE_TORSO;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.CUTE_TORSO;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_TORSO);
+        }
 
-            if (name.Trim().Equals(TITLE.CUTE_HAT)){
-                MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
-                labelElement.label = TITLE.CUTE_HAT;
-                MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
-                labelElement1.label = DESC.CUTE_HAT;
-                MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
-                graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_HAT);
-            }
+        if (name.Trim().Equals(TITLE.CUTE_HAT)){
+            MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
+            labelElement.label = TITLE.CUTE_HAT;
+            MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
+            labelElement1.label = DESC.CUTE_HAT;
+            MenuGraphic graphicElement = (MenuGraphic) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Img");
+            graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_HAT);
+        }
     }
 
     void TurnOffCard(string cardNumber){
