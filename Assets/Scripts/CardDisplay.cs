@@ -22,7 +22,7 @@ public class CardDisplay : MonoBehaviour
                 TurnOffCard(i.ToString());
 
             // Turn on cards up to cardCount
-            for (int i = 0; i <= cardCount; i++)
+            for (int i = 0; i < cardCount; i++)
             {
                 cardName[i] = AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[i].invItem.label;
                 TurnOnCard(cardName[i], i + 1);

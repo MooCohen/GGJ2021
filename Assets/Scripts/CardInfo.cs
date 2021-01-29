@@ -23,7 +23,7 @@ public static class TITLE
 
 public static class DESC
 {
-    public const string COWBOY_FEET = "+ Yeehaw";
+    public const string COWBOY_FEET = "+ Contra Dance";
     public const string COWBOY_LEGS = "+ Hot Dang";
     public const string COWBOY_TORSO = "+ Yeehaw";
     public const string COWBOY_HAT = "+ Howdy";
