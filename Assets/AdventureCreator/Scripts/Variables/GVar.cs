@@ -35,7 +35,7 @@ namespace AC
 		/** Its variable type. */
 		public VariableType type;
 		/** Its value, if an integer, popup or boolean. If a boolean, 0 = False, and 1 = True. */
-		[SerializeField] protected int val = 0;
+		[SerializeField] public int val = 0;
 		/** Its value, if a float. */
 		[SerializeField] protected float floatVal = 0f;
 		/** Its value, if a string. */

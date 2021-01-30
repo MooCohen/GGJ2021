@@ -8,13 +8,25 @@ public class PlayerManager : MonoBehaviour
     public SpriteRenderer player;
     public SpriteRenderer playerFight;
     
+    public SpriteRenderer opponent;
+    public SpriteRenderer opponentFight;
+
     void Start(){
-        player.sprite = setPlayerDressUpSprite();
-        playerFight.sprite = setPlayerFightSprite();
+        player.sprite = setDressUpSprite();
+        playerFight.sprite = setFightSprite();
+
+        GenerateOpponent();
+        //Start of match, reset to 0 used moves
+        AC.GlobalVariables.GetVariable(3).IntegerValue = 0;
     } 
 
+    void GenerateOpponent(){
+        //TODO this function
+        // opponentType = //"Goth" "Cowboy" "Cute"
+    }
 
-    private Sprite setPlayerDressUpSprite() {
+
+    private Sprite setDressUpSprite() {
         switch (AC.GlobalVariables.GetVariable(0).GetValue()) {
             case "Bald":
                 return Resources.Load<Sprite>("Art/Characters/Man_one");
@@ -34,7 +46,7 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    private Sprite setPlayerFightSprite() {
+    private Sprite setFightSprite() {
         switch (AC.GlobalVariables.GetVariable(0).GetValue()) {
             case "Bald":
                 return Resources.Load<Sprite>("Art/Characters/Man_one_fight");

@@ -565,7 +565,7 @@ namespace AC
 		}
 
 
-		private void SetEffectiveVisibility (bool fromPreDisplay)
+		public void SetEffectiveVisibility (bool fromPreDisplay)
 		{
 			if (!onlyShowWhenEffective || elementToShift == null || !Application.isPlaying)
 			{

@@ -32,7 +32,7 @@ public class CardDisplay : MonoBehaviour
     }
 
     void TurnOnCard(string name, int cardNumber) {
-        if (name.Trim().Equals(TITLE.COWBOY_FEET)){
+        if (name.Trim().Equals(ID.COWBOY_FEET)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.COWBOY_FEET;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -41,7 +41,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_FEET);
         }
 
-        if (name.Trim().Equals(TITLE.COWBOY_LEGS)){
+        if (name.Trim().Equals(ID.COWBOY_LEGS)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.COWBOY_LEGS;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -50,7 +50,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_LEGS);
         }
         
-        if (name.Trim().Equals(TITLE.COWBOY_TORSO)){
+        if (name.Trim().Equals(ID.COWBOY_TORSO)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.COWBOY_TORSO;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -59,7 +59,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_TORSO);
         }
 
-        if (name.Trim().Equals(TITLE.COWBOY_HAT)){
+        if (name.Trim().Equals(ID.COWBOY_HAT)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.COWBOY_HAT;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -68,7 +68,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.COWBOY_HAT);
         }
 
-        if (name.Trim().Equals(TITLE.GOTH_FEET)){
+        if (name.Trim().Equals(ID.GOTH_FEET)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.GOTH_FEET;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -77,7 +77,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_FEET);
         }
 
-        if (name.Trim().Equals(TITLE.GOTH_LEGS)){
+        if (name.Trim().Equals(ID.GOTH_LEGS)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.GOTH_LEGS;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -86,7 +86,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_LEGS);
         }
 
-        if (name.Trim().Equals(TITLE.GOTH_TORSO)){
+        if (name.Trim().Equals(ID.GOTH_TORSO)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.GOTH_TORSO;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -95,7 +95,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_TORSO);
         }
 
-        if (name.Trim().Equals(TITLE.GOTH_HAT)){
+        if (name.Trim().Equals(ID.GOTH_HAT)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.GOTH_HAT;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -104,7 +104,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.GOTH_HAT);
         }
 
-        if (name.Trim().Equals(TITLE.CUTE_FEET)){
+        if (name.Trim().Equals(ID.CUTE_FEET)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.CUTE_FEET;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -113,7 +113,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_FEET);
         }
 
-        if (name.Trim().Equals(TITLE.CUTE_LEGS)){
+        if (name.Trim().Equals(ID.CUTE_LEGS)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.CUTE_LEGS;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -122,7 +122,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_LEGS);
         }
 
-        if (name.Trim().Equals(TITLE.CUTE_TORSO)){
+        if (name.Trim().Equals(ID.CUTE_TORSO)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.CUTE_TORSO;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
@@ -131,7 +131,7 @@ public class CardDisplay : MonoBehaviour
             graphicElement.graphic.texture = Resources.Load<Texture>("Art/Clothes/" + IMG.CUTE_TORSO);
         }
 
-        if (name.Trim().Equals(TITLE.CUTE_HAT)){
+        if (name.Trim().Equals(ID.CUTE_HAT)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.CUTE_HAT;
             MenuLabel labelElement1 = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Desc");
