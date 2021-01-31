@@ -16,7 +16,7 @@
 
     // private List<string> winThis = new List<string> {
     //     "Take this, I think it'd look good on you.",
-    //     "Here I think you earned this.",
+    //     "Here I think you earned this. Might help for next time.",
     //     "You could rock this I bet.",
     //     "I want you to have this."
     // };

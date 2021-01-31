@@ -5,7 +5,7 @@ using AC;
 
 public class CardDisplay : MonoBehaviour
 {
-    public int clicks = 1;
+    public int clicks;
     private int cardCount;
     private List<string> cardName = new List<string>();
 
@@ -14,7 +14,8 @@ public class CardDisplay : MonoBehaviour
         //Check how many cards total, if only have 3 or 2 or 1 just show those cards
         //The cards are intertwine with the Adventure Creator Inventory system, but to display them w generated text+img they have to be menu elements so its a weird combo.
         int cardCount = AC.KickStarter.runtimeInventory.GetNumberOfItemsCarried();
-
+        clicks = 1;
+        AC.PlayerMenus.ResetInventoryBoxes ();
 
         if (cardCount == 0)
             Debug.Log("Err. No cards.");

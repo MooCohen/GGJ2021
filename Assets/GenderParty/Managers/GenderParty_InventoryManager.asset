@@ -70,7 +70,7 @@ MonoBehaviour:
   - label: Cowboy Head
     id: 1
     altLabel: Cowboy Hat
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -124,7 +124,7 @@ MonoBehaviour:
   - label: Cowboy Legs
     id: 2
     altLabel: Moo Shorts
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -286,7 +286,7 @@ MonoBehaviour:
   - label: Goth Head
     id: 5
     altLabel: Goth Makeover
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -340,7 +340,7 @@ MonoBehaviour:
   - label: Goth Legs
     id: 6
     altLabel: Goth Joggers
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -394,7 +394,7 @@ MonoBehaviour:
   - label: Goth Torso
     id: 7
     altLabel: Mesh Top
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -502,7 +502,7 @@ MonoBehaviour:
   - label: Cute Head
     id: 9
     altLabel: Rabbit Hat
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -556,7 +556,7 @@ MonoBehaviour:
   - label: Cute Legs
     id: 10
     altLabel: Cupcake Skirt
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []

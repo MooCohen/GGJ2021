@@ -394,7 +394,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 364
-    y: 1253.5
+    y: 1273.5
     width: 300
     height: 226
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -616,7 +616,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 14
-    y: 438
+    y: 458
     width: 300
     height: 232
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -721,7 +721,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 14
-    y: 190
+    y: 196
     width: 300
     height: 232
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -954,7 +954,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 364
-    y: 2417.5
+    y: 2599.5
     width: 300
     height: 253
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -993,8 +993,8 @@ MonoBehaviour:
   comment: 
   numSockets: 1
   willWait: 0
-  endAction: 2
-  skipAction: 12
+  endAction: 0
+  skipAction: 13
   skipActionActual: {fileID: 1510388261}
   linkedCutscene: {fileID: 0}
   linkedAsset: {fileID: 0}
@@ -1004,9 +1004,9 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 364
-    y: 1993.5
+    y: 2013.5
     width: 300
-    height: 152
+    height: 132
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
   showOutputSockets: 1
   parentActionListInEditor: {fileID: 6925870806492528384}
@@ -1357,6 +1357,50 @@ MonoBehaviour:
   fadeTexture: {fileID: 2800000, guid: 2de7d16b4ac4b402182d4f2ca40e0b2d, type: 3}
   renderFading: 1
   forwardDirection: 0
+--- !u!114 &962834362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d33593da7d3524e1998da7151086b1b3, type: 3}
+  m_Name: ActionVisible(Clone)
+  m_EditorClassIdentifier: 
+  id: 0
+  category: 12
+  title: Visibility
+  description: Hides or shows a GameObject. Can optionally affect the GameObject's
+    children.
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  numSockets: 1
+  willWait: 0
+  endAction: 2
+  skipAction: 13
+  skipActionActual: {fileID: 1510388261}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 364
+    y: 2175.5
+    width: 300
+    height: 152
+  overrideColor: {r: 1, g: 1, b: 1, a: 1}
+  showOutputSockets: 1
+  parentActionListInEditor: {fileID: 6925870806492528384}
+  parameterID: -1
+  constantID: 0
+  obToAffect: {fileID: 1634542784}
+  affectChildren: 0
+  visState: 1
 --- !u!1 &996770617
 GameObject:
   m_ObjectHideFlags: 0
@@ -6257,7 +6301,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 364
-    y: 700
+    y: 720
     width: 300
     height: 253
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -6470,7 +6514,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 364
-    y: 983
+    y: 1003
     width: 300
     height: 240.5
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -6995,7 +7039,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 14
-    y: 700
+    y: 720
     width: 300
     height: 212
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -7301,7 +7345,7 @@ MonoBehaviour:
   numSockets: 1
   willWait: 1
   endAction: 1
-  skipAction: 12
+  skipAction: 13
   skipActionActual: {fileID: 1510388261}
   linkedCutscene: {fileID: 0}
   linkedAsset: {fileID: 0}
@@ -7311,7 +7355,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 364
-    y: 2175.5
+    y: 2357.5
     width: 300
     height: 212
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -7383,7 +7427,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 364
-    y: 1509.5
+    y: 1529.5
     width: 300
     height: 252
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -8130,7 +8174,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 364
-    y: 1791.5
+    y: 1811.5
     width: 300
     height: 172
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -8601,7 +8645,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 14
-    y: 942
+    y: 962
     width: 300
     height: 253
   overrideColor: {r: 1, g: 1, b: 1, a: 1}
@@ -13911,6 +13955,7 @@ MonoBehaviour:
   - {fileID: 2061211712}
   - {fileID: 1528541921}
   - {fileID: 795928776}
+  - {fileID: 962834362}
   - {fileID: 1510388261}
   isSkippable: 1
   triggerTime: 0
