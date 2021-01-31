@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ParkingLot.unity
     guid: e63d44151ed114478b592e82cf152cfd
+  - enabled: 1
+    path: Assets/FoodCourt.unity
+    guid: 7f494ff1481074216a6c7d67becb12d8
   m_configObjects: {}

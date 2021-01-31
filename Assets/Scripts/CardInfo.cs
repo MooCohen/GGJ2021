@@ -16,7 +16,7 @@ public static class ID
     public const string GOTH_HAT = "Goth Head";
 
     public const string CUTE_FEET = "Cute Feet";
-    public const string CUTE_LEGS = "Cute Feet";
+    public const string CUTE_LEGS = "Cute Legs";
     public const string CUTE_TORSO = "Cute Torso";
     public const string CUTE_HAT = "Cute Head";
 }
@@ -24,19 +24,19 @@ public static class ID
 public static class TITLE
 {
     public const string COWBOY_FEET = "Cowboy Boots";
-    public const string COWBOY_LEGS = "Cow Print Shorts";
-    public const string COWBOY_TORSO = "Cowboy Vest";
+    public const string COWBOY_LEGS = "Moo Shorts";
+    public const string COWBOY_TORSO = "Leather Top";
     public const string COWBOY_HAT = "Cowboy Hat";
 
-    public const string GOTH_FEET = "Goth Boots";
-    public const string GOTH_LEGS = "Goth Fishnets";
-    public const string GOTH_TORSO = "Goth Vest";
-    public const string GOTH_HAT = "Goth Makeup";
+    public const string GOTH_FEET = "Goth Shoes";
+    public const string GOTH_LEGS = "Goth Joggers";
+    public const string GOTH_TORSO = "Mesh Top";
+    public const string GOTH_HAT = "Goth Makeover";
 
-    public const string CUTE_FEET = "Cute Boots";
-    public const string CUTE_LEGS = "Booty shorts";
-    public const string CUTE_TORSO = "Cute Vest";
-    public const string CUTE_HAT = "Cute Head";
+    public const string CUTE_FEET = "Cute Shoes";
+    public const string CUTE_LEGS = "Cupcake Skirt";
+    public const string CUTE_TORSO = "Blouse";
+    public const string CUTE_HAT = "Rabbit Hat";
 }
 
 public static class DESC
@@ -63,20 +63,34 @@ public static class DESC
 }
 
 //File names stored in Resources/Art/Clothes
+//Images for the card display
 public static class IMG
 {
-    public const string COWBOY_FEET = "";
+    public const string COWBOY_FEET = "Cowboy_boots_card";
     public const string COWBOY_LEGS = "Cow_shorts_card";
     public const string COWBOY_TORSO = "Cowboy_shirt_card";
     public const string COWBOY_HAT = "Cowboy_hat_card";
 
     public const string GOTH_FEET = "";
-    public const string GOTH_LEGS = "";
+    public const string GOTH_LEGS = "Goth_pants_card";
     public const string GOTH_TORSO = "Goth_shirt_card";
     public const string GOTH_HAT = "Goth_hat_card";
 
     public const string CUTE_FEET = "";
-    public const string CUTE_LEGS = "";
-    public const string CUTE_TORSO = "Pastel_pants_card";
-    public const string CUTE_HAT = "";
+    public const string CUTE_LEGS = "Pastel_pants_card";
+    public const string CUTE_TORSO = "Pastel_shirt_card";
+    public const string CUTE_HAT = "Pastel_hat_card";
+}
+
+public static class CHARACTER
+{
+    public const string BALD_FIGHT = "Art/Characters/Man_one_fight";
+    public const string CURLY_FIGHT = "Art/Characters/Girl_three_fight_revised";
+    public const string PINK_FIGHT = "Art/Characters/Girl_one_fight";
+    public const string BANGS_FIGHT = "Art/Characters/Girl_two_fight";
+
+    public const string BALD_FULL = "Art/Characters/Man_one";
+    public const string CURLY_FULL = "Art/Characters/Girl_three_full_revised";
+    public const string PINK_FULL = "Art/Characters/Girl_one";
+    public const string BANGS_FULL = "Art/Characters/Girl_two";
 }

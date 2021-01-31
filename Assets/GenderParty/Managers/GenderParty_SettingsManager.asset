@@ -157,9 +157,18 @@ MonoBehaviour:
   useAsyncLoading: 0
   loadingDelay: 0
   blackOutWhenInitialising: 1
-  playMusicWhilePaused: 0
+  playMusicWhilePaused: 1
   playAmbienceWhilePaused: 0
-  musicStorages: []
+  musicStorages:
+  - ID: 0
+    audioClip: {fileID: 8300000, guid: b8c87edde040240a8be5753411e1e672, type: 3}
+    relativeVolume: 1
+  - ID: 1
+    audioClip: {fileID: 8300000, guid: 06f0c4621965845de84307501794a4f2, type: 3}
+    relativeVolume: 1
+  - ID: 2
+    audioClip: {fileID: 8300000, guid: a515b2125abfd40828541fb558c8e714, type: 3}
+    relativeVolume: 1
   ambienceStorages: []
   loadAmbienceFadeTime: 0
   crossfadeAmbienceWhenLoading: 0

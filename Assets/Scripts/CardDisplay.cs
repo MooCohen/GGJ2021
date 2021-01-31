@@ -5,13 +5,16 @@ using AC;
 
 public class CardDisplay : MonoBehaviour
 {
+    public int clicks = 1;
+    private int cardCount;
+    private List<string> cardName = new List<string>();
+
     void Start()
     {
         //Check how many cards total, if only have 3 or 2 or 1 just show those cards
         //The cards are intertwine with the Adventure Creator Inventory system, but to display them w generated text+img they have to be menu elements so its a weird combo.
         int cardCount = AC.KickStarter.runtimeInventory.GetNumberOfItemsCarried();
 
-        List<string> cardName = new List<string>() { "", "", "", "", ""};
 
         if (cardCount == 0)
             Debug.Log("Err. No cards.");
@@ -24,14 +27,49 @@ public class CardDisplay : MonoBehaviour
             // Turn on cards up to cardCount
             for (int i = 0; i < cardCount; i++)
             {
-                cardName[i] = AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[i].invItem.label;
-                TurnOnCard(cardName[i], i + 1);
+                cardName.Add(AC.KickStarter.runtimeInventory.playerInvCollection.invInstances[i].invItem.label);
+                if (i < 4){
+                    TurnOnCard(cardName[i], i + 1);
+                }
             }
-
         }
     }
 
-    void TurnOnCard(string name, int cardNumber) {
+    private void OnEnable () {
+        EventManager.OnMenuElementClick += ElementClick;
+    }
+
+    private void OnDisable () {
+        EventManager.OnMenuElementClick -= ElementClick;
+    }
+
+
+    //Checks if a move was selected
+    private void ElementClick (AC.Menu _menu, MenuElement _element, int _slot, int _buttonPressed)
+    {
+        if (_menu.title == "Dress Up")
+        {
+            if (_element.title == "ShiftRight"){
+                clicks += 1;
+
+                TurnOnCard(cardName[clicks], 1);
+                TurnOnCard(cardName[clicks + 1], 2);
+                TurnOnCard(cardName[clicks + 2], 3);
+                TurnOnCard(cardName[clicks + 3], 4);
+            }
+
+            if (_element.title == "ShiftLeft"){
+                clicks -= 1;
+
+                TurnOnCard(cardName[clicks], 1);
+                TurnOnCard(cardName[clicks + 1], 2);
+                TurnOnCard(cardName[clicks + 2], 3);
+                TurnOnCard(cardName[clicks + 3], 4);
+            }
+        }
+    }
+
+    public void TurnOnCard(string name, int cardNumber) {
         if (name.Trim().Equals(ID.COWBOY_FEET)){
             MenuLabel labelElement = (MenuLabel) PlayerMenus.GetElementWithName ("Dress Up", "Card " + cardNumber + " Title");
             labelElement.label = TITLE.COWBOY_FEET;

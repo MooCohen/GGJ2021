@@ -15,7 +15,7 @@ MonoBehaviour:
   items:
   - label: Cowboy Feet
     id: 0
-    altLabel: 
+    altLabel: Cowboy Boots
     carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -26,11 +26,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: da77eceb9129a4cedbf305a613738f51, type: 3}
-    activeTex: {fileID: 2800000, guid: 9a4390b556839466e9cfef1a0f5a49c5, type: 3}
+    activeTex: {fileID: 2800000, guid: c2dea1c2816d14fd0b8654f84a5d44de, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 2800000, guid: 9a4390b556839466e9cfef1a0f5a49c5, type: 3}
+      texture: {fileID: 2800000, guid: c2dea1c2816d14fd0b8654f84a5d44de, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Cowboy Head
     id: 1
-    altLabel: 
+    altLabel: Cowboy Hat
     carryOnStart: 1
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -80,11 +80,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: afb94fab4fd0e40d9b2dc0036697d6cb, type: 3}
-    activeTex: {fileID: 0}
+    activeTex: {fileID: 2800000, guid: 6a904117e9d1745e9b41d63d258a29f6, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 2800000, guid: 9a4390b556839466e9cfef1a0f5a49c5, type: 3}
+      texture: {fileID: 2800000, guid: 6a904117e9d1745e9b41d63d258a29f6, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1
@@ -123,7 +123,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Cowboy Legs
     id: 2
-    altLabel: 
+    altLabel: Moo Shorts
     carryOnStart: 1
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -134,11 +134,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: 5548d6f3820eb4b548a4c33792192086, type: 3}
-    activeTex: {fileID: 0}
+    activeTex: {fileID: 2800000, guid: 393132550040e4843bf6663420537534, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 0}
+      texture: {fileID: 2800000, guid: 393132550040e4843bf6663420537534, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1
@@ -177,7 +177,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Cowboy Torso
     id: 3
-    altLabel: 
+    altLabel: Leather Top
     carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -188,11 +188,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: 7f314cfffcacc41e4881a702ef52dbd6, type: 3}
-    activeTex: {fileID: 2800000, guid: cf8e2933b6eab4e50b07254e0156c8b2, type: 3}
+    activeTex: {fileID: 2800000, guid: d7bd776164c884ebf95b7db1daeb2bf4, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 2800000, guid: cf8e2933b6eab4e50b07254e0156c8b2, type: 3}
+      texture: {fileID: 2800000, guid: d7bd776164c884ebf95b7db1daeb2bf4, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1
@@ -231,7 +231,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Goth Feet
     id: 4
-    altLabel: 
+    altLabel: Goth Shoes
     carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -285,7 +285,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Goth Head
     id: 5
-    altLabel: 
+    altLabel: Goth Makeover
     carryOnStart: 1
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -296,11 +296,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: afb94fab4fd0e40d9b2dc0036697d6cb, type: 3}
-    activeTex: {fileID: 0}
+    activeTex: {fileID: 2800000, guid: 7ae4045ab781c43098dcd56a95a95a6d, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 2800000, guid: 4ed6f833ef6ce4416a643fa1e4393075, type: 3}
+      texture: {fileID: 2800000, guid: 7ae4045ab781c43098dcd56a95a95a6d, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1
@@ -339,8 +339,8 @@ MonoBehaviour:
     showInFilter: 1
   - label: Goth Legs
     id: 6
-    altLabel: 
-    carryOnStart: 0
+    altLabel: Goth Joggers
+    carryOnStart: 1
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -350,11 +350,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: 5548d6f3820eb4b548a4c33792192086, type: 3}
-    activeTex: {fileID: 0}
+    activeTex: {fileID: 2800000, guid: 7c687a74388424e0dbcf2b6c4313e170, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 0}
+      texture: {fileID: 2800000, guid: 7c687a74388424e0dbcf2b6c4313e170, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1
@@ -393,7 +393,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Goth Torso
     id: 7
-    altLabel: 
+    altLabel: Mesh Top
     carryOnStart: 1
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -404,11 +404,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: 7f314cfffcacc41e4881a702ef52dbd6, type: 3}
-    activeTex: {fileID: 0}
+    activeTex: {fileID: 2800000, guid: 1cfcad85b4da543fc918972429bf2e8d, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 2800000, guid: cf8e2933b6eab4e50b07254e0156c8b2, type: 3}
+      texture: {fileID: 2800000, guid: 1cfcad85b4da543fc918972429bf2e8d, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1
@@ -447,7 +447,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Cute Feet
     id: 8
-    altLabel: 
+    altLabel: Cute Shoes
     carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -501,8 +501,8 @@ MonoBehaviour:
     showInFilter: 1
   - label: Cute Head
     id: 9
-    altLabel: 
-    carryOnStart: 0
+    altLabel: Rabbit Hat
+    carryOnStart: 1
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -512,11 +512,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: afb94fab4fd0e40d9b2dc0036697d6cb, type: 3}
-    activeTex: {fileID: 0}
+    activeTex: {fileID: 2800000, guid: 877540cb51bcc45a0a0ef59f2f5efbc3, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 0}
+      texture: {fileID: 2800000, guid: 877540cb51bcc45a0a0ef59f2f5efbc3, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1
@@ -555,7 +555,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Cute Legs
     id: 10
-    altLabel: 
+    altLabel: Cupcake Skirt
     carryOnStart: 1
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -566,11 +566,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: 5548d6f3820eb4b548a4c33792192086, type: 3}
-    activeTex: {fileID: 0}
+    activeTex: {fileID: 2800000, guid: dd4172b3c9a8a4ee89ca20edaf47b57f, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 2800000, guid: 807d46a756e8541ca8f9bf4bb16e07da, type: 3}
+      texture: {fileID: 2800000, guid: dd4172b3c9a8a4ee89ca20edaf47b57f, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1
@@ -609,7 +609,7 @@ MonoBehaviour:
     showInFilter: 1
   - label: Cute Torso
     id: 11
-    altLabel: 
+    altLabel: Blouse
     carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
@@ -620,11 +620,11 @@ MonoBehaviour:
     maxCount: 999
     itemStackingMode: 0
     tex: {fileID: 2800000, guid: 7f314cfffcacc41e4881a702ef52dbd6, type: 3}
-    activeTex: {fileID: 0}
+    activeTex: {fileID: 2800000, guid: 1806df202a6cf4d86bf778efe6c28005, type: 3}
     selectedTex: {fileID: 0}
     linkedPrefab: {fileID: 0}
     cursorIcon:
-      texture: {fileID: 0}
+      texture: {fileID: 2800000, guid: 1806df202a6cf4d86bf778efe6c28005, type: 3}
       isAnimated: 0
       numFrames: 1
       numRows: 1

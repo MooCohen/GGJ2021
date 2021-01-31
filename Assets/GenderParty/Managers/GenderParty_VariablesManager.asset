@@ -16,7 +16,7 @@ MonoBehaviour:
   - label: Chosen Character
     id: 0
     type: 4
-    val: 0
+    val: 3
     floatVal: 0
     textVal: 
     popUps:
@@ -75,6 +75,64 @@ MonoBehaviour:
     floatVal: 0
     textVal: 
     popUps: []
+    vector3Val: {x: 0, y: 0, z: 0}
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    canTranslate: 1
+    popUpID: 0
+    textValLineID: -1
+    popUpsLineID: -1
+    description: 
+    showInFilter: 1
+  - label: Opponent Self Confidence
+    id: 4
+    type: 1
+    val: 0
+    floatVal: 0
+    textVal: 
+    popUps: []
+    vector3Val: {x: 0, y: 0, z: 0}
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    canTranslate: 1
+    popUpID: 0
+    textValLineID: -1
+    popUpsLineID: -1
+    description: 
+    showInFilter: 1
+  - label: Opponent
+    id: 5
+    type: 4
+    val: 0
+    floatVal: 0
+    textVal: 
+    popUps:
+    - Bald
+    - Pink
+    - Curly
+    - Bangs
+    vector3Val: {x: 0, y: 0, z: 0}
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    canTranslate: 1
+    popUpID: 0
+    textValLineID: -1
+    popUpsLineID: -1
+    description: 
+    showInFilter: 1
+  - label: Opponent Vibe
+    id: 6
+    type: 4
+    val: 0
+    floatVal: 0
+    textVal: 
+    popUps:
+    - Goth
+    - Cowboy
+    - Cute
     vector3Val: {x: 0, y: 0, z: 0}
     link: 0
     pmVar: 
