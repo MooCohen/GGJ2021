@@ -16,6 +16,11 @@ public class PlayerManager : MonoBehaviour
 
         //Start of match, reset to 0 used moves
         AC.GlobalVariables.GetVariable(3).IntegerValue = 0;
+        AC.PlayerMenus.GetElementWithName ("Fight", "1").IsVisible = true;
+        AC.PlayerMenus.GetElementWithName ("Fight", "2").IsVisible = true;
+        AC.PlayerMenus.GetElementWithName ("Fight", "3").IsVisible = true;
+        AC.PlayerMenus.GetElementWithName ("Fight", "4").IsVisible = true;
+
     } 
 
 

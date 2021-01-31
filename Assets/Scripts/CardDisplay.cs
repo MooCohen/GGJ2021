@@ -59,12 +59,13 @@ public class CardDisplay : MonoBehaviour
             }
 
             if (_element.title == "ShiftLeft"){
-                clicks -= 1;
-
-                TurnOnCard(cardName[clicks], 1);
-                TurnOnCard(cardName[clicks + 1], 2);
-                TurnOnCard(cardName[clicks + 2], 3);
-                TurnOnCard(cardName[clicks + 3], 4);
+                if (clicks != 0){
+                    clicks -= 1;
+                    TurnOnCard(cardName[clicks], 1);
+                    TurnOnCard(cardName[clicks + 1], 2);
+                    TurnOnCard(cardName[clicks + 2], 3);
+                    TurnOnCard(cardName[clicks + 3], 4);
+                }
             }
         }
     }

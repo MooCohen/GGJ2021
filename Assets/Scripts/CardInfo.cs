@@ -41,25 +41,25 @@ public static class TITLE
 
 public static class DESC
 {
-    public const string COWBOY_FEET = "+ Contra Dance";
-    public const string COWBOY_LEGS = "+ Hot Dang";
-    public const string COWBOY_TORSO = "+ Yeehaw";
-    public const string COWBOY_HAT = "+ Howdy";
+    public const string COWBOY_FEET = "Contra Dance";
+    public const string COWBOY_LEGS = "Hot Dang";
+    public const string COWBOY_TORSO = "Yeehaw";
+    public const string COWBOY_HAT = "Howdy";
 
-    public const string GOTH_FEET = "+ Stomp";
-    public const string GOTH_LEGS = "+ Sad Music";
-    public const string GOTH_TORSO = "+ Sigh";
-    public const string GOTH_HAT = "+ Hair flip";
+    public const string GOTH_FEET = "Stomp";
+    public const string GOTH_LEGS = "Sad Music";
+    public const string GOTH_TORSO = "Sigh";
+    public const string GOTH_HAT = "Hair flip";
 
-    public const string CUTE_FEET = "+ Awww";
-    public const string CUTE_LEGS = "+ Strut";
-    public const string CUTE_TORSO = "+ Giggle";
-    public const string CUTE_HAT = "+ Sneeze";
+    public const string CUTE_FEET = "Awww";
+    public const string CUTE_LEGS = "Strut";
+    public const string CUTE_TORSO = "Giggle";
+    public const string CUTE_HAT = "Sneeze";
 
-    public const string NAKED_FEET = "+ Dance";
-    public const string NAKED_LEGS = "+ Stretch";
-    public const string NAKED_TORSO = "+ Wiggle";
-    public const string NAKED_HAT = "+ Wink";
+    public const string NAKED_FEET = "Dance";
+    public const string NAKED_LEGS = "Stretch";
+    public const string NAKED_TORSO = "Wiggle";
+    public const string NAKED_HAT = "Wink";
 }
 
 //File names stored in Resources/Art/Clothes
