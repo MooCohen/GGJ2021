@@ -15,7 +15,9 @@ public class Fight : MonoBehaviour
     public ParticleSystem opponentHearts; 
     public ParticleSystem opponentStars; 
     public Char opponent_npc;
-    public string opponentType;
+    public MoveInfo.moveType opponentType;
+
+	public MoveInfo.matchUp lastMatchUp;
 
     
     void ShowFight(){
@@ -69,8 +71,7 @@ public class Fight : MonoBehaviour
             AC.PlayerMenus.GetElementWithName (_menu.title, _element.title).IsVisible = false;
             AC.GlobalVariables.GetVariable(3).IntegerValue++;
             _menu.TurnOff();
-
-            DetermineDamage(_element.title);
+            DetermineDamage(CleanMoveName(_element));
             DetermineOpponentDamage();
             
             //If used all  moves, determine a winner
@@ -83,15 +84,37 @@ public class Fight : MonoBehaviour
         }
     }
 
+	private string CleanMoveName(MenuElement element)
+	{
+		string name = (element as AC.MenuButton).label;
+		if (name[0] == '+')
+			return name.Substring(2);
+		else
+			return name;
+	}
+
     private IEnumerator DialogueCutScene() {
         KickStarter.stateHandler.EnforceCutsceneMode = true;
 
-        //TODO turn on particle effect behind who ever did better that round
-        hearts.Play(); // opponentHearts.Play();
-        stars.Play(); // opponentStars.Play();
+		//TODO turn on particle effect behind who ever did better that round
 
-        //TODO import lines, opponent says something when their move is stronger, or something else when move is weaker
-        KickStarter.dialog.StartDialog(opponent_npc, "hot damn");
+		//TODO import lines, opponent says something when their move is stronger, or something else when move is weaker
+		if (lastMatchUp == MoveInfo.matchUp.ADV)
+		{
+			hearts.Play();
+			stars.Play();
+			KickStarter.dialog.StartDialog(opponent_npc, "hot damn");
+		}
+		else if (lastMatchUp == MoveInfo.matchUp.NEUTRAL)
+		{
+			hearts.Play();
+			KickStarter.dialog.StartDialog(opponent_npc, "yeah");
+		}
+		else if (lastMatchUp == MoveInfo.matchUp.DISADV)
+		{
+			KickStarter.dialog.StartDialog(opponent_npc, "psssh");
+		}
+
         while (KickStarter.dialog.CharacterIsSpeaking(opponent_npc))
         {
             yield return new WaitForFixedUpdate();
@@ -195,19 +218,26 @@ public class Fight : MonoBehaviour
 
     //Goth > Cowboy > Cute
     void DetermineDamage(string moveName){
-        //opponentType = "Goth" "Cowboy" "Cute"
+		MoveInfo.Move move = MoveInfo.moves[moveName];
+		lastMatchUp = MoveInfo.GetMatchUp(move.type, opponentType);
 
-        //TODO check moveName against CardInfo DESC's for the type to determine effectiveness
-
-        //Adds 1 to play self confidence
-        AC.GlobalVariables.GetVariable(2).IntegerValue++;
+		if (lastMatchUp == MoveInfo.matchUp.ADV)
+		{
+			AC.GlobalVariables.GetVariable(2).IntegerValue += 4;
+		}
+		else if (lastMatchUp == MoveInfo.matchUp.DISADV)
+		{
+			AC.GlobalVariables.GetVariable(2).IntegerValue += 1;
+		}
+		else if (lastMatchUp == MoveInfo.matchUp.NEUTRAL)
+			AC.GlobalVariables.GetVariable(2).IntegerValue += 2;
     }
 
     void DetermineOpponentDamage(){
-        //Opponent used _______ visible on a menu or dialog
-        //TODO Determine enemy damage.  Enemy max health is same as player
+		//Opponent used _______ visible on a menu or dialog
+		//TODO Determine enemy damage.  Enemy max health is same as player
 
-        //Adds 1 to opponent self confidence
-        AC.GlobalVariables.GetVariable(4).IntegerValue++;
+		//Adds 1 to opponent self confidence
+		AC.GlobalVariables.GetVariable(4).IntegerValue += 2;
     }
 }
