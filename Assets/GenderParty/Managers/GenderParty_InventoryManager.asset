@@ -16,7 +16,7 @@ MonoBehaviour:
   - label: Cowboy Feet
     id: 0
     altLabel: Cowboy Boots
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -66,11 +66,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Cowboy Head
     id: 1
     altLabel: Cowboy Hat
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -120,11 +120,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Cowboy Legs
     id: 2
     altLabel: Moo Shorts
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -174,11 +174,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Cowboy Torso
     id: 3
     altLabel: Leather Top
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -228,11 +228,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Goth Feet
     id: 4
     altLabel: Goth Shoes
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -282,11 +282,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Goth Head
     id: 5
     altLabel: Goth Makeover
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -336,11 +336,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Goth Legs
     id: 6
     altLabel: Goth Joggers
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -390,11 +390,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Goth Torso
     id: 7
     altLabel: Mesh Top
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -444,11 +444,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Cute Feet
     id: 8
     altLabel: Cute Shoes
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -498,11 +498,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Cute Head
     id: 9
     altLabel: Rabbit Hat
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -552,11 +552,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Cute Legs
     id: 10
     altLabel: Cupcake Skirt
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -606,11 +606,11 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   - label: Cute Torso
     id: 11
     altLabel: Blouse
-    carryOnStart: 1
+    carryOnStart: 0
     carryOnStartNotDefault: 0
     carryOnStartIDs: 00000000
     vars: []
@@ -660,7 +660,7 @@ MonoBehaviour:
     carryOnStartID: -1
     useSeparateSlots: 0
     selectSingle: 0
-    showInFilter: 1
+    showInFilter: 0
   bins:
   - label: Cowboy
     id: 0

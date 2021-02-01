@@ -81,15 +81,29 @@ public class Fight : MonoBehaviour
             _menu.TurnOff(false);
             DetermineDamage(CleanMoveName(_element));
             DetermineOpponentDamage();
-            
-            //Before using all moves.
-            CheckForWin();
+
             //If used all  moves, determine a winner
             if (AC.GlobalVariables.GetVariable(3).IntegerValue == 4){
                 CalculateWinner();
             } else {
-                StartCoroutine("DialogueCutScene");
-                _menu.TurnOn(false);
+                //Before using all moves.
+                if (AC.GlobalVariables.GetVariable(2).IntegerValue >= 10){
+                    StartCoroutine("Win");
+                }
+
+                //Player lost all self confidence
+                else if (AC.GlobalVariables.GetVariable(2).IntegerValue == 0){
+                    StartCoroutine("Lost");
+                }
+
+                //Opponent has max self confidence
+                else if (AC.GlobalVariables.GetVariable(4).IntegerValue == 10){
+                    StartCoroutine("Lost");
+                }
+                else {
+                    StartCoroutine("DialogueCutScene");
+                    _menu.TurnOn(false);
+                }
             }
         }
     }
@@ -156,28 +170,6 @@ public class Fight : MonoBehaviour
         hearts.Stop();
         stars.Stop();
         KickStarter.stateHandler.EnforceCutsceneMode = false;
-    }
-
-    void CheckForWin() {
-        //Player maxed out their self confidence
-        if (AC.GlobalVariables.GetVariable(2).IntegerValue >= 10){
-            StartCoroutine("Win");
-        }
-
-        //Player lost all self confidence
-        else if (AC.GlobalVariables.GetVariable(2).IntegerValue == 0){
-            StartCoroutine("Lost");
-        }
-
-        //Opponent has max self confidence
-        else if (AC.GlobalVariables.GetVariable(4).IntegerValue == 10){
-            StartCoroutine("Lost");
-        }
-
-        // //Used all available moves
-        // else if (AC.GlobalVariables.GetVariable(3).IntegerValue == 4){
-        //     CalculateWinner();
-        // }
     }
 
     void CalculateWinner(){
