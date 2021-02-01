@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//TODO make a spreadsheet to link this to?
 public static class ID
 {
     public const string COWBOY_FEET = "Cowboy Feet";
@@ -49,7 +48,7 @@ public static class DESC
     public const string GOTH_FEET = "Stomp";
     public const string GOTH_LEGS = "Sad Music";
     public const string GOTH_TORSO = "Sigh";
-    public const string GOTH_HAT = "Hair flip";
+    public const string GOTH_HAT = "Hair Flip";
 
     public const string CUTE_FEET = "Awww";
     public const string CUTE_LEGS = "Strut";
@@ -71,12 +70,12 @@ public static class IMG
     public const string COWBOY_TORSO = "Cowboy_shirt_card";
     public const string COWBOY_HAT = "Cowboy_hat_card";
 
-    public const string GOTH_FEET = "";
+    public const string GOTH_FEET = "Goth_shoes_card";
     public const string GOTH_LEGS = "Goth_pants_card";
     public const string GOTH_TORSO = "Goth_shirt_card";
     public const string GOTH_HAT = "Goth_hat_card";
 
-    public const string CUTE_FEET = "";
+    public const string CUTE_FEET = "Pastel_shoes_card";
     public const string CUTE_LEGS = "Pastel_pants_card";
     public const string CUTE_TORSO = "Pastel_shirt_card";
     public const string CUTE_HAT = "Pastel_hat_card";

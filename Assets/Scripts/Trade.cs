@@ -8,6 +8,7 @@ public class Trade : MonoBehaviour
     public Char opponent_npc;
     private InvItem carriedInv;
     private InvItem offeredInv;
+    //Goth > Cowboy > Cute
 
     private List<string> greetings = new List<string> {
         "Hey hot stuff. Looking for a trade?",
@@ -24,7 +25,10 @@ public class Trade : MonoBehaviour
         "Have fun, hot stuff.",
         "Byebye",
         "Catch ya later.",
-        "Can't wait to run into you again."
+        "Can't wait to run into you again.",
+        "Hot tip: Goth clothes? Kick cowboy's butt. Remember that for next time!",
+        "Want a little advice? Pastel vibes don't stand a chance against cowboy fashion. Don't ask why.",
+        "Did you know Goth fashion is wear to Pastel? I'm not really sure why now that I think about it..."
     };
 
     void Start()

@@ -241,10 +241,12 @@ public class RandomizePerson : MonoBehaviour
                 Feet.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_FEET);
                 Legs.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_LEGS);
 
-                Head_Fight.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_HAT_FIGHT);
-                Torso_Fight.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_TORSO_FIGHT);
-                Feet_Fight.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_FEET_FIGHT);
-                Legs_Fight.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_LEGS_FIGHT);
+                if(opponent_Fight){
+                    Head_Fight.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_HAT_FIGHT);
+                    Torso_Fight.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_TORSO_FIGHT);
+                    Feet_Fight.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_FEET_FIGHT);
+                    Legs_Fight.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.GOTH_LEGS_FIGHT);
+                }
                 break;
             case 1:
                 Head.sprite = Resources.Load<Sprite>("Art/Outfits/" + PINK.COWBOY_HAT);

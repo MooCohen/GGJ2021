@@ -16,7 +16,7 @@ MonoBehaviour:
   - label: Chosen Character
     id: 0
     type: 4
-    val: 3
+    val: 1
     floatVal: 0
     textVal: 
     popUps:
@@ -133,6 +133,23 @@ MonoBehaviour:
     - Goth
     - Cowboy
     - Cute
+    vector3Val: {x: 0, y: 0, z: 0}
+    link: 0
+    pmVar: 
+    updateLinkOnStart: 0
+    canTranslate: 1
+    popUpID: 0
+    textValLineID: -1
+    popUpsLineID: -1
+    description: 
+    showInFilter: 1
+  - label: Player Level
+    id: 7
+    type: 1
+    val: 0
+    floatVal: 0
+    textVal: 
+    popUps: []
     vector3Val: {x: 0, y: 0, z: 0}
     link: 0
     pmVar: 

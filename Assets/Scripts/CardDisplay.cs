@@ -14,7 +14,7 @@ public class CardDisplay : MonoBehaviour
         //Check how many cards total, if only have 3 or 2 or 1 just show those cards
         //The cards are intertwine with the Adventure Creator Inventory system, but to display them w generated text+img they have to be menu elements so its a weird combo.
         int cardCount = AC.KickStarter.runtimeInventory.GetNumberOfItemsCarried();
-        clicks = 1;
+        clicks = 0;
         AC.PlayerMenus.ResetInventoryBoxes ();
 
         if (cardCount == 0)
